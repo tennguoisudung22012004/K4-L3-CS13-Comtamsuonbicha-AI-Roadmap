@@ -6,7 +6,7 @@
 
 - [Comtamsuonbicha_CS13.xlsx](Comtamsuonbicha_CS13.xlsx): Nhiệm vụ 0–5, giữ mẫu và công thức đề 3.
 - [Comtamsuonbicha_CS13_Slide.pptx](Comtamsuonbicha_CS13_Slide.pptx): 1 slide cho lãnh đạo.
-- [team/TEAM.md](team/TEAM.md): thông tin thành viên.
+- [TEAM.md](TEAM.md): thông tin thành viên.
 
 ## Quyết định chính
 
