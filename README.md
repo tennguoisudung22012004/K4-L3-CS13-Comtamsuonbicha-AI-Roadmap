@@ -1,45 +1,37 @@
-# CS13 — Lộ trình sản phẩm AI
+# CS13 – Lộ trình sản phẩm AI
 
-**AI in Action · Track 1 · Khóa 4 · Level 3 dùng chung · Chiều 16/10/2026**
+**Nhóm: Comtamsuonbicha · Đề 3: RaViện**
 
-Trong bài này, nhóm bạn lập lộ trình 12 tháng cho một sản phẩm AI: làm gì trước, dựa vào bằng chứng nào, khi nào tăng mức tự động và khi nào dừng. Sản phẩm cuối là **một file Excel của nhóm** và **một slide cho lãnh đạo**, lưu trong repo GitHub của nhóm. Mỗi thành viên nộp cùng link repo trên VLearn. Bạn không cần viết code, cài Python hay có API key.
+## File bài làm
 
-## Bắt đầu từ đâu?
+- [Comtamsuonbicha_CS13.xlsx](Comtamsuonbicha_CS13.xlsx): Nhiệm vụ 0–5, giữ mẫu và công thức đề 3.
+- [Comtamsuonbicha_CS13_Slide.pptx](Comtamsuonbicha_CS13_Slide.pptx): 1 slide cho lãnh đạo.
+- [team/TEAM.md](team/TEAM.md): thông tin thành viên.
 
-1. Xem [luật làm bài](RULES.md), rồi xác định đề của nhóm trong bảng dưới.
-2. Tải [hồ sơ tình huống](docs/CS13_HoSoTinhHuong.pdf) và file Excel tương ứng về máy. Mở bằng Excel hoặc LibreOffice.
-3. Lưu một bản làm bài tên `[Nhom]_CS13.xlsx`, thay `[Nhom]` bằng tên nhóm thực tế.
-4. Tạo repo nhóm theo [SUBMISSION.md](SUBMISSION.md). Làm lần lượt CP1 → CP4 trong [CHECKPOINTS.md](CHECKPOINTS.md); CP5 làm ở nhà.
+## Quyết định chính
 
-| Số nhóm | Đề | File Excel cần tải |
-|---|---|---|
-| 1, 4, 7, 10 và các nhóm cách nhau 3 số | 1 · SổSạch — đọc hóa đơn đầu vào | [CS13_Roadmap_De1.xlsx](src/CS13_Roadmap_De1.xlsx) |
-| 2, 5, 8, 11 và các nhóm cách nhau 3 số | 2 · ChấmNhanh — chấm bài viết tiếng Anh | [CS13_Roadmap_De2.xlsx](src/CS13_Roadmap_De2.xlsx) |
-| 3, 6, 9, 12 và các nhóm cách nhau 3 số | 3 · RaViện — soạn nháp tóm tắt ra viện | [CS13_Roadmap_De3.xlsx](src/CS13_Roadmap_De3.xlsx) |
+Sửa lỗi insulin, thêm 5 ca và chạy lại 45 ca trước pilot. Bác sĩ bệnh viện đọc và ký 100% bản nháp. Mức 1 có dược sĩ duyệt 100%; chỉ xét Mức 2 khi đủ cổng 600 ca và xác nhận tỷ lệ duyệt giảm còn 10% vẫn an toàn. Không làm mức tự gửi cho người bệnh.
 
-Nếu chưa biết số nhóm, hỏi coach trước khi chọn file. Nhóm chỉ dùng **một** file đề. Có thể chọn một người giữ file và chia sẻ màn hình để cả nhóm cùng quyết định.
+Kinh tế từ đề: 11.668đ/việc và biên 6,66% khi dược sĩ duyệt 100%; 4.918đ/việc và biên 60,66% nếu duyệt 10%. Tỷ lệ duyệt tối đa để biên đạt 60% là 11,09%. Nếu thực tế cần duyệt nhiều hơn, duyệt đủ và tính lại giá, không cắt duyệt để đạt biên.
 
-**Chỉ điền ô vàng.** Ô xanh là công thức đã khóa. Số liệu kinh tế đã có ở trang `2_Mức tự động`, dòng 12–20; không cần tìm file của buổi khác. Khi cần xem cách diễn đạt, mở [bản mẫu cho một sản phẩm khác](src/CS13_Roadmap_Mau.xlsx); đừng chép số của mẫu sang đề của nhóm.
+## Giả định và cách kiểm chứng
 
-## Cần hoàn thành gì trong 60 phút?
+Số liệu bối cảnh, kết quả eval hiện có và 9 đầu vào kinh tế lấy từ hồ sơ giả định của khóa học. Điểm ưu tiên, các ngưỡng mới, tỷ lệ duyệt 10%, ngân sách trần 100 triệu/90 ngày và phân bổ nhân sự là **đề xuất**, chưa phải kết quả vận hành. Baseline thời gian lấy từ hồ sơ là 15–20 phút/bản; cần đo lại trên 100 ca so sánh cùng độ khó. Không ghi kết quả pilot giả.
 
-| Giờ ngày 16/10/2026 | Checkpoint | Kết quả cần có |
-|---|---|---|
-| 17:00–17:17 | CP1 · Đọc hồ sơ, viết giả thuyết | Đọc đủ 6 mục; ít nhất 5 việc có giả thuyết, chỉ số và ngưỡng |
-| 17:17–17:30 | CP2 · Chấm điểm ưu tiên | Ít nhất 5 việc có điểm; có lựa chọn và lý do |
-| 17:30–17:43 | CP3 · Mức tự động và cổng | Ít nhất 2 mức có cổng; có vai trò người duyệt và căn cứ kinh tế |
-| 17:43–17:55 | CP4 · Bảng lộ trình, rà soát | Tầng Bây giờ đủ 8 dòng; có điều kiện dừng và lịch rà soát |
-| 17:55–18:00 | Kiểm tra và nộp | Tải Excel lên repo nhóm; mỗi người nộp link repo trên VLearn |
-| Ở nhà, trước 23:59 ngày 19/10/2026 | CP5 · Slide lãnh đạo | Điền trang 5 và tạo 1 slide từ 5 ô nội dung |
+Đề xuất trần ngân sách: khoảng 42 triệu biến phí (3.600 việc × 11.668đ), 50 triệu kỹ thuật, 8 triệu chuyên gia. Vòng 45 ca cần khoảng 22,84 giờ theo ngoại suy từ 20,3 giờ/40 ca, đặt lịch 24 giờ và xác nhận khả dụng với chuyên gia. Tập giữ kín 600 ca cần thêm khoảng 30 giờ kiểm thuốc ở giả định 3 phút/ca, thuộc chi phí duyệt. Định nghĩa “sửa nhiều” đề xuất: phải sửa nội dung lâm sàng hoặc viết lại >30% phần diễn biến; chuyên gia chốt rubric trước thu mẫu.
 
-Tất cả mốc giờ dùng giờ Việt Nam. Phần lý thuyết diễn ra 14:00–17:00; lịch trên chỉ dành cho thực hành. Bản chuẩn không có phần thuyết trình trên lớp.
+Ngày 30/60/90 tính từ ngày bắt đầu dự án. Điều kiện dừng >30% sửa nhiều tính ở cuối tháng thứ 3 **kể từ khi bắt đầu pilot**. Một lỗi thuốc lọt người bệnh: dừng ngay. 0 lỗi/600 ca chỉ cho cận trên xấp xỉ 0,5% theo quy tắc ba, không chứng minh không còn rủi ro. Quyền dùng dữ liệu và yêu cầu tuân thủ do pháp chế bệnh viện xác nhận trước pilot.
 
-## Đọc thêm ở đâu?
+## Nguồn
 
-- [CHECKPOINTS.md](CHECKPOINTS.md): từng bước điền, cách hiểu và tự kiểm tra.
-- [src/README.md](src/README.md): bản đồ các trang Excel và lỗi thường gặp.
-- [RUBRIC.md](RUBRIC.md): thang chấm chính thức 100 điểm.
-- [SUBMISSION.md](SUBMISSION.md): hai lần nộp và checklist.
-- [docs/README.md](docs/README.md): hồ sơ và slide bài giảng gốc.
+- T1_D28.pdf: giả thuyết, điểm AI, cổng, điều kiện dừng và slide lãnh đạo.
+- [Repo đề bài](https://github.com/tennguoisudung22012004/K4-L3-CS13-Comtamsuonbicha-AI-Roadmap): README, SUBMISSION, CHECKPOINTS, RUBRIC.
+- Hồ sơ tình huống CS13, trang 6–7; CS13_Roadmap_De3.xlsx.
 
-Điền [team/TEAM.md](team/TEAM.md) để người chấm biết thành viên và đóng góp. Các mẫu trong `report/team/` dùng để ghi chép thêm nếu cần; bài làm chính là Excel và slide trong repo nhóm. Xem cách tạo repo, tải file và nộp link tại [SUBMISSION.md](SUBMISSION.md).
+AI hỗ trợ đọc tài liệu, soạn bản đề xuất, điền file và kiểm tra tính toán. Thành viên cần rà soát, hiểu và xác nhận quyết định trước nộp.
+
+## Nộp bài
+
+Giải nén, tải các file lên repo nhóm (giữ thư mục team). Điền thông tin còn thiếu trong TEAM.md và xác nhận phân công thực tế. Mỗi thành viên nộp cùng link repo trên VLearn theo SUBMISSION.md.
+
+Ghi chú tương thích: công thức kiểm tra chữ số và xếp hạng được viết lại dạng tương đương để tính ổn định trên nhiều phần mềm. Giữ công thức động, không ghi đè kết quả bằng số. File đã tính lại trên LibreOffice, tự kiểm tra đạt 8/8.
